@@ -8,10 +8,22 @@ height: 80vh;
 display:flex;
 justify-content:center;
 align-items:center;
+
+@media (max-width:800px){
+flex-direction: column;
+height:80vh;
+}
 `
 export const Box1=styled.div`
 width:30rem;
 height:15rem;
+
+@media (max-width:800px){
+  width: 80vw;
+  text-align:center;
+  height:50vhvh;
+  
+}
 
 `
 
@@ -21,11 +33,20 @@ export const Titulo=styled.h1`
 color:#F9F9F9;
 font-size:2rem;
 height:3.5rem;
+
+@media (max-width:800px){
+  font-size: 2rem;
+}
 `
 export const BlocoFrase= styled.p`
 color: #828282;
 height:3.5rem;
 font-size:1rem;
+
+@media (max-width:800px){
+  height:3rem;
+  margin-top:3rem;
+}
 `
 export const BtnCv= styled.button`
 background-color: #b10c43;
@@ -40,16 +61,29 @@ cursor:pointer;
 &:hover {
     background-color: #ff0841 ;
   }
+
+  @media (max-width:800px){
+    width:5rem;
+  }
 `
 export const BtnContato= styled(BtnCv)`
 background-color: #02031a;
 color: #F9F9F9;
+
+@media (max-width:800px){
+  width:5rem;
+}
 `
 export const Img= styled.img`
 width:9rem;
 height:15.3rem;
 border-radius: 0.5rem;
 border: solid 2px #02031a;
+
+@media (max-width:800px){
+  width:11rem;
+  height:16rem;
+}
 `
 
 
