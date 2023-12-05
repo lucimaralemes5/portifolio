@@ -14,10 +14,14 @@ justify-content: space-around;
 flex-direction: column;
 
 
+@media (max-width:800px) {
+    height:150vh;
+}
+
 `
 export const DivProjeto=styled.div`
 width:100vw;
-height: 80vh;
+height: 60vh;
 text-align:center;
 border-radius:20px;
 display:flex;
@@ -25,10 +29,10 @@ justify-content:space-around;
 align-items:center;
 color: #828282;
 
-@media (max-width:800px){
+@media (max-width:800px) {
     flex-direction: column;
-    border: gold solid;
-    height:100vh;
+    height:120vh;
+    
 }
 `
 
@@ -38,25 +42,37 @@ height:20vh;
 border-top-right-radius:15px;
 border-top-left-radius:15px;
 
-`
-export const Box3= styled.div`
-height: 51vh;
-width: 20.5vw;
-
-
-@media (max-width:800px){
-    height:10vh;
-    widht:60vw;
-    border: green solid;
+@media (max-width:800px) {
+    width:60vw;
 }
 
+`
+export const Box3= styled.div`
+height: 50vh;
+width: 20.5vw;
+
+@media (max-width:800px) {
+    height:1vh;
+    width:60vw;
+}
+
+`
+export const TituloProjeto=styled.h2`
+font-size:1.5rem;
+width:25vw;
+text-align:center;
+
+@media (max-width:800px) {
+    width:80vw;
+    font-size: 2rem;
+}
 `
 
 function Projetos(){
     return(
         <Sessao>
             
-            <h2>Meus Projetos</h2>
+            <TituloProjeto>Meus Projetos</TituloProjeto>
         <DivProjeto>
             
             <Box3>
@@ -66,7 +82,7 @@ function Projetos(){
                     </a>
                 </figure>
                 <h2>Formulário de Cadastro</h2>
-                <h3>Descrição</h3>
+                <h3>Descrição:</h3>
                 <p>React,Hooks,styled components</p>
             </Box3>
             <Box3>
@@ -76,7 +92,7 @@ function Projetos(){
                     </a>
                 </figure>
                 <h2>Contador</h2>
-                <h3>Descrição</h3>
+                <h3>Descrição:</h3>
                 <p>React,Hooks,styled components</p>
             </Box3>
             <Box3>
@@ -86,7 +102,7 @@ function Projetos(){
                     </a>
                 </figure>
                 <h2>Calculadora de IMC</h2>
-                <h3>Descrição</h3>
+                <h3>Descrição:</h3>
                 <p>React,Hooks,styled components</p>
             </Box3>
         </DivProjeto>
